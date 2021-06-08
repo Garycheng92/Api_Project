@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+<body>
+<div class="logged-in-box auth0-box logged-in">
+    <h2>Welcome {{userinfo['name']}}</h2>
+    <pre>User ID: {{userinfo['user_id']}}</pre>
+    <pre>{{userinfo['token']}}</pre>
+    <a class="btn btn-primary btn-lg btn-logout btn-block" href="/logout">Logout</a>
+</div>
+</body>
+</html>
